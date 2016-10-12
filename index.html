@@ -17,143 +17,19 @@
   <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="javascripts/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="javascripts/bootstrap.js"></script>
-  <script type="text/javascript" src="javascripts/main.js"></script>
 </head>
 <body>
   <div class="warp">
 
-    <!-- header -->
-    <div class="header">
-      <div class="container">
+    <!-- login -->
+    <div class="container">
+      <div class="form-signin">
 
-        <!-- Left -->
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/Logo.svg" alt="logo">
-          </a>
-          <span>Events</span>
-        </div>
-
-        <!-- RWD btn -->
-        <button type="button" class="navbar-toggle collapsed">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- right -->
-        <div class="col-xs-12 col-sm-5 eventSearch">
-          <div class="row">
-
-            <div class="form-group col-sm-4 event-year">
-              <select class="form-control" name="year">
-                <option value="all">全部年分</option>
-              </select>
-            </div>
-
-            <div class="form-group col-sm-8 event-key">
-              <input id="event_serach" type="Search" class="form-control" placeholder="活動探索 - 請輸入活動的關鍵字">
-              <span class="glyphicon glyphicon-search event-icon" aria-hidden="true"></span>
-            </div>
-
-          </div>
-        </div>
-
-      </div><!-- container -->
-    </div>
-    <!-- header -->
-
-
-
-    <!-- Swiper --><!-- slider -->
-    <div class="swiper-container" id="swiper_box">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide slider_img slider01" href="#">
-          </a>
-          <a class="swiper-slide slider_img slider02" href="#">
-          </a>
-          <a class="swiper-slide slider_img slider03" href="#">
-          </a>
-          <a class="swiper-slide slider_img slider04" href="#">
-          </a>
-          <a class="swiper-slide slider_img slider05" href="http://event.neweggbox.com/content/jul-13-2016/">
-          </a>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next glyphicon glyphicon-chevron-right"></div>
-        <div class="swiper-button-prev glyphicon glyphicon-chevron-left"></div>
-    </div>
-    <!-- slider -->
-
-
-    <!-- content -->
-    <div class="content" id="content_box">
-
-      <!-- 2016 -->
-      <div id="y2016" class="section template_section">
-        <div class="container">
-          <h1 class="year-title">
-            2016<small>999 Events</small>
-          </h1>
-          <div class="row template_cardin">
-
-            <div class="col-sm-6 col-lg-4 template_card">
-              <div class="card ">
-                <a class="card_landingGo" href="http://event.neweggbox.com/web/jul-13-2016/">
-                  <div class="card_img">
-                    <img class="card_img_infor" src="images/error_event.jpg" onError="this.src='images/error_event.jpg';" alt="活動名稱">
-                  </div>
-                  <div class="card_infor">
-                    <h4 class="card_infor_title">NeweggBox 雲端運算的商業運用 - 簡單好用大幅提升...生產力</h4>
-                    <p class="card_infor_time">2016-08-24(三)  13:00</p>
-                    <p class="card_infor_add">台北市內湖區瑞光路513巷31號9F</p>
-                  </div>
-                </a>
-                <div class="card_btn">
-                  <a class="signup_Go" data-id="" href="#">點我報名去 !</a>
-                </div>
-              </div><!-- card -->
-            </div>
-
-          </div><!-- template_cardin -->
-        </div>
-      </div><!-- y2016 -->
-
-    </div>
-    <!-- content -->
-
-
-    <!-- footer -->
-    <div class="footer">
-      <div class="logo">
-        <img src="images/Logo.svg" alt="logo">
-        <p>Copyright © 2016 NeweggBox. All rights reserved</p>
       </div>
     </div>
-    <!-- footer -->
-
 
 
   </div><!-- warp -->
-
-
-
-  <!-- 警告視窗 -->
-  <div id="modal_alert" class="modal fade">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        </div>
-        <div class="modal-body">
-          <p class="modal_text text-center">錯誤訊息</p>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-
 
 
   <!-- swiper JS -->

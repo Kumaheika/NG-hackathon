@@ -258,37 +258,41 @@
   background: linear-gradient(to right, #1a5687, #1a5687);
 }
 
-/* line 35, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 * {
   box-sizing: border-box;
   font-family: "Helvetica", "微軟正黑體", Arial, Helvetica, sans-serif;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 33, ../sass/main.scss */
 body {
   font-size: 16px;
   color: #444;
   line-height: 1.8;
-  padding: 0;
-  margin: 0;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 p {
   margin: 0;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 a {
   color: #163972;
 }
-/* line 51, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 a:hover {
   color: #1e4e9d;
   text-decoration: none;
 }
 
-/* line 58, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .horizontal.divider {
   display: table;
   white-space: nowrap;
@@ -297,7 +301,7 @@ a:hover {
   line-height: 1;
   text-align: center;
 }
-/* line 65, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .horizontal.divider:before, .horizontal.divider:after {
   content: ' ';
   display: table-cell;
@@ -307,44 +311,23 @@ a:hover {
   background-repeat: no-repeat;
   background-image: url("../images/line.png");
 }
-/* line 74, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .horizontal.divider:before {
   background-position: right 1em top 50%;
 }
-/* line 77, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .horizontal.divider:after {
   background-position: left 1em top 50%;
 }
 
-/* line 81, ../sass/main.scss */
-.divider {
-  margin: 1rem 0;
-  font-size: .9rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #444;
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
+/* line 76, ../sass/main.scss */
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both;
 }
 
-/* line 94, ../sass/main.scss */
-.warp {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 100, ../sass/main.scss */
-.content .section {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  border-top: 20px solid #f2f2f2;
-}
-
-/* line 108, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 .hovereffect {
   -moz-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
   -webkit-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
@@ -354,7 +337,7 @@ a:hover {
   -webkit-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
 }
-/* line 111, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .hovereffect:hover {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -365,33 +348,59 @@ a:hover {
   transition: box-shadow 0.25s;
 }
 
-/* line 120, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
+.warp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/background_1440.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* line 101, ../sass/main.scss */
+.form-signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 446px;
+  height: 554px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 117, ../sass/main.scss */
 .modal_subtitle {
   font-weight: 700;
 }
 
-/* line 125, ../sass/main.scss */
+/* line 122, ../sass/main.scss */
 .modal-content .modal-body p.pading_B {
   color: #999;
 }
 
-/* line 130, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .modal-ful {
   width: 90%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 130, ../sass/main.scss */
+  /* line 127, ../sass/main.scss */
   .modal-ful {
     width: 98%;
   }
 }
 
-/* line 137, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .modal_alert .modal-header {
   border-bottom: none;
   padding: 6px;
 }
-/* line 141, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .modal_alert .modal-body {
   background: none;
   padding-bottom: 24px;

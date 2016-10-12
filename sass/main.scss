@@ -6,6 +6,13 @@ $color_font: #444;
 $color_font_alink: #163972;
 $color_border: #f2f2f2;
 
+//陰影參數
+$shodow_la: 0 15px 30px -5px rgba(0,0,0,0.4);
+$shodow_m: 0 0 14px 0 rgba(0,0,0,0.15);
+$shodow_nav: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+$shadow_S: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0);
+$shadow_L: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
 
 @import "compass/css3";
 @import "mixin";
@@ -14,34 +21,19 @@ $color_border: #f2f2f2;
 
 
 
-
-//陰影參數
-$shodow_la: 0 15px 30px -5px rgba(0,0,0,0.4);
-$shodow_m: 0 0 14px 0 rgba(0,0,0,0.15);
-$shodow_nav: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-
-$shadow_S: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0);
-$shadow_L: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-
-//上方 header 高度
-$headerHeight: 60px;
-//Slide Show 高度
-$slideHeight: 360px;
-//Footer 高度
-$footHeight: 120px;
-
-
 // bootstrap 全域 修改
 * {
   box-sizing: border-box;
   font-family: $web_font;
 }
+html, body {
+  width: 100%;
+  height: 100%;
+}
 body {
   font-size: $web_fontsize;
   color: $color_font;
   line-height: 1.8;
-  padding: 0;
-  margin: 0;
 }
 p {
   margin: 0;
@@ -78,33 +70,17 @@ a {
     background-position: left 1em top 50%;
   }
 }
-.divider {
-  margin: 1rem 0;
-  font-size: .9rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: $color_font;
-  @include user-select(none);
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
-
-//基本 layout
-.warp {
-  width: 100%;
-  height: 100%;
-}
-
-.content {
-  .section {
-    padding-top: 80px;
-    padding-bottom: 100px;
-    border-top: 20px solid $color_border;
+// 清除浮動
+.clearfix {
+  &:after {
+    content: ' ';
+    display: block;
+    clear: both;
   }
 }
 
-//滑入效果
+// 滑入效果
 .hovereffect {
   @include box-shadow($shadow_S);
   @include transition (box-shadow .25s);
@@ -113,6 +89,27 @@ a {
     @include transition (box-shadow .25s);
   }
 }
+
+//基本 layout
+.warp {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/background_1440.jpg") center no-repeat;
+  background-size: cover;
+}
+.form-signin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 446px;
+  height: 554px;
+  background-color: rgba(255, 255, 255, 0.5);
+  @include transform ( translateX(-50%) translateY(-50%) );
+  @include border-radius (5px);
+}
+
+
 
 //互動視窗
 .modal-body {
