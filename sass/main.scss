@@ -1,5 +1,5 @@
 //變數-全域
-$web_fontsize: 16px;
+$web_fontsize: 18px;
 $web_font: 'Helvetica','微軟正黑體', Arial, Helvetica, sans-serif;
 $color01: #1a5687;
 $color_font: #444;
@@ -18,6 +18,7 @@ $shadow_L: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 @import "mixin";
 @import "swiper";
 @import "card";
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 
 
@@ -38,13 +39,6 @@ body {
 p {
   margin: 0;
 }
-a {
-  color: $color_font_alink;
-  &:hover {
-    color: lighten($color_font_alink, 10%);
-    text-decoration: none;
-  }
-}
 
 //分隔線條
 .horizontal.divider {
@@ -54,6 +48,11 @@ a {
   overflow: hidden;
   line-height: 1;
   text-align: center;
+  &.style {
+    font-size: $web_fontsize;
+    color: #FFF;
+    padding: 10px 0;
+  }
   &:before, &:after {
     content: ' ';
     display: table-cell;
@@ -70,7 +69,6 @@ a {
     background-position: left 1em top 50%;
   }
 }
-
 // 清除浮動
 .clearfix {
   &:after {
@@ -79,7 +77,6 @@ a {
     clear: both;
   }
 }
-
 // 滑入效果
 .hovereffect {
   @include box-shadow($shadow_S);
@@ -89,6 +86,12 @@ a {
     @include transition (box-shadow .25s);
   }
 }
+//key frame
+@keyframes fadeIn {
+  0%   {opacity: 1;}
+  50%  {opacity: .3;}
+  100% {opacity: .5;}
+}
 
 //基本 layout
 .warp {
@@ -97,49 +100,107 @@ a {
   height: 100%;
   background: url("../images/background_1440.jpg") center no-repeat;
   background-size: cover;
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .5;
+    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 5s;
+  }
 }
 .form-signin {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 446px;
-  height: 554px;
+  z-index: 5;
+  // height: 554px;
+  padding: 30px 38px;
   background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
   @include transform ( translateX(-50%) translateY(-50%) );
   @include border-radius (5px);
-}
-
-
-
-//互動視窗
-.modal-body {
-}
-.modal_subtitle {
-  font-weight: 700;
-}
-.modal-content {
-  .modal-body {
-    p.pading_B {
-      color: #999;
+  a, p {
+    color: #FFF;
+  }
+  .logo {
+    height: 59px;
+    font-size: 48px;
+    color: #FFF;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  .form-group {
+    position: relative;
+    margin-bottom: 10px;
+    .user-icon {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      left: 20px;
+      top: 6px;
     }
   }
-}
-.modal-ful {
-  width: 90%;
-  @media screen and (max-width: 1024px) {
-      width: 98%;
+  .form-control {
+    // position: relative;
+    height: 50px;
+    font-size: $web_fontsize;
+    color: #FFF;
+    border: none;
+    margin-bottom: 10px;
+    @include border-radius (0);
+    &.fb {
+      background-color: #5da8ff;
+    }
+    &.google {
+      background-color: #ff8896;
+    }
+    &.input {
+      color: $color_font;
+      border: solid 1px #b4b4b4;
+      padding-left: 50px;
+    }
+    &.login {
+      background-color: #4a90e2;
+    }
   }
-}
-.modal_alert {
-  .modal-header {
-    border-bottom: none;
-    padding: 6px;
+  .forgot {
+    a {
+      font-size: $web_fontsize - 4px;
+      letter-spacing: .5px;
+      padding: 0 6px;
+      &:first-child {
+        position: relative;
+        padding-right: 10px;
+        &:after {
+          content: ' ';
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          border-right: 1px solid #FFF;
+        }
+      }
+    }
   }
-  .modal-body {
-    background: none;
-    padding-bottom: 24px;
-  }
-  .modal-footer {
-  //   border-top: none;
+  .join {
+    p {
+      display: inline;
+      letter-spacing: .5px;
+    }
+    a {
+      font-size: 24px;
+      font-weight: bold;
+    }
   }
 }
