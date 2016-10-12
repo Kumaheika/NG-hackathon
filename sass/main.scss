@@ -1,0 +1,311 @@
+@import "compass/css3";
+@import "mixin";
+@import "variable";
+@import "swiper";
+@import "demo";
+@import "nav";
+@import "card";
+@import "footer";
+@import "signup";
+
+
+// bootstrap 全域 修改
+* {
+  box-sizing: border-box;
+  font-family: $web_font;
+}
+html {
+  font-size: $web_fontsize;
+}
+body {
+  font-size: $web_fontsize;
+  line-height: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: $font_color02;
+  background: $body_bg01;
+}
+h1, h2, h3, h4, h5, p, table, td, th, li, dt, dd, strong {
+  color: $font_color01;
+  font-family: $web_font;
+}
+a, p, dd, dt {
+  font-size: 1rem;
+}
+th, td {
+  font-size: 1rem;
+}
+p {
+  margin: 0;
+}
+a {
+  color: $font_color01;
+  &:hover {
+    color: $font_color04;
+    text-decoration: none;
+  }
+  // font 保持黑
+  & > span.black {
+    color: $font_color01;
+  }
+}
+.label {
+  font-size: 90%;
+}
+
+/* Tooltip */
+  .tooltip > .tooltip-inner {
+      background-color: darken($color01, 20%);;
+      color: #FFFFFF;
+      border: 1px solid darken($color01, 20%);;
+      padding: 8px 10px;
+      font-size: .9rem;
+  }
+  /* Tooltip on top */
+  .tooltip.top > .tooltip-arrow {
+      border-top: 5px solid green;
+  }
+  /* Tooltip on bottom */
+  .tooltip.bottom > .tooltip-arrow {
+      border-bottom: 5px solid darken($color01, 20%);;
+  }
+  /* Tooltip on left */
+  .tooltip.left > .tooltip-arrow {
+      border-left: 5px solid red;
+  }
+  /* Tooltip on right */
+  .tooltip.right > .tooltip-arrow {
+      border-right: 5px solid black;
+  }
+
+// dropdown
+.dropdown-menu {
+  width: 100%;
+  border-bottom: 4px solid $color01;
+}
+
+
+//form-group 覆蓋
+.form-group {
+  &.event-year, &.event-key {
+    padding: 0;
+    margin: 10px 0;
+    .form-control {
+      height: 44px;
+    }
+    @include pad_under {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 0;
+      .form-control {
+        height: 32px;
+      }
+    }
+  }
+  &.event-year {
+    position: relative;
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 1;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: #000 transparent transparent transparent;
+    }
+    .form-control {
+      color: #000;
+      background-image: linear-gradient(top, lighten($color03, 10%), $color04); //#ffb739
+      border: 1px solid $color04;
+      font-weight: 700;
+      padding: 0 10px;
+    }
+
+    //消除 select 的向下箭頭
+    select::-ms-expand {
+      display: none;
+    }
+    select{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: 5px;
+
+    }
+    @include pad_under {
+      &::after {
+        top: 12px;
+        right: 12px;
+      }
+    }
+  }
+  &.event-key {
+    .event-icon {
+      position: absolute;
+      right: 18px;
+      top: 15px;
+      color: $font_color04;
+    }
+    @include pad_under {
+      .event-icon {
+        right: 18px;
+        top: 9px;
+      }
+    }
+  }
+}
+
+//form-control 覆蓋
+.form-control {
+  padding: 0 12px;
+  @include border-radius(2px);
+}
+
+//分隔線條
+.horizontal.divider {
+  display: table;
+  white-space: nowrap;
+  height: auto;
+  overflow: hidden;
+  line-height: 1;
+  text-align: center;
+  &:before, &:after {
+    content: ' ';
+    display: table-cell;
+    position: relative;
+    top: 50%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-image: url("../images/line.png");
+  }
+  &:before {
+    background-position: right 1em top 50%;
+  }
+  &:after {
+    background-position: left 1em top 50%;
+  }
+}
+.divider {
+  margin: 1rem 0;
+  font-size: .9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: $font_color02;
+  @include user-select(none);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.help-block {
+  font-size: 0.9rem;
+  color: $font_color02;
+}
+
+
+//基本 layout
+.warp {
+  width: 100%;
+  height: 100%;
+  padding-top: $headerHeight;
+  &.signup {
+    background: $color07;
+  }
+}
+
+.content {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 100px;
+    border-top: 20px solid $color05;
+    .year-title {
+      position: relative;
+      font-weight: 700;
+      border-bottom: 6px solid $color05;
+      padding-bottom: 10px;
+      margin: 0;
+      margin-bottom: 20px;
+      &::after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        bottom: -6px;
+        left: 0;
+        width: 160px;
+        border-bottom: 6px solid $color03;
+      }
+      small {
+        font-size: .8rem;
+        padding-left: .5rem;
+        text-align: right;
+      }
+    }
+  }
+}
+
+//滑入效果
+.hovereffect {
+  @include box-shadow($shadow_S);
+  @include transition (box-shadow .25s);
+  &:hover {
+    @include box-shadow($shadow_L);
+    @include transition (box-shadow .25s);
+  }
+}
+
+// Data picker 的 shadow
+.ui-datepicker.ui-widget-content {
+  box-shadow: $shodow_la;
+  background: #FFF;
+}
+
+//互動視窗
+.modal-body {
+}
+.modal_subtitle {
+  font-weight: 700;
+}
+.modal-content {
+  // border-top: 4px solid $color01;
+  .modal-body {
+    p.pading_B {
+      color: #999;
+    }
+  }
+}
+.modal-ful {
+  width: 90%;
+  @media screen and (max-width: 1024px) {
+      width: 98%;
+  }
+}
+#modal_alert {
+  .modal-header {
+    border-bottom: none;
+    padding: 6px;
+  }
+  .modal-body {
+    background: none;
+    padding-bottom: 24px;
+  }
+  .modal-footer {
+  //   border-top: none;
+  }
+}
+
+
+//錯誤警告
+.warringword {
+  display: none;
+  color: #FFF;
+  font-size: .9rem;
+  padding: $p_pa_s $p_pa_s*2;
+  margin-top: $p_pa_s;
+  @include border-radius(6px);
+  &.active {
+    display: inline-block;
+  }
+}

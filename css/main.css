@@ -1,0 +1,76 @@
+/*
+Error: File to import not found or unreadable: demo.
+       Load paths:
+         Compass::SpriteImporter
+         D:/KumaWu/04_webproject/NG-hackathon/sass
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/susy-2.1.3/sass
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/fire-app-example/stylesheets
+         D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets
+        on line 5 of D:/KumaWu/04_webproject/NG-hackathon/sass/main.scss
+
+1: @import "compass/css3";
+2: @import "mixin";
+3: @import "variable";
+4: @import "swiper";
+5: @import "demo";
+6: @import "nav";
+7: @import "card";
+8: @import "footer";
+9: @import "signup";
+10: 
+
+Backtrace:
+D:/KumaWu/04_webproject/NG-hackathon/sass/main.scss:5
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:66:in `import'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:64:in `import'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:28:in `imported_file'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/import_node.rb:36:in `css_import?'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:311:in `visit_import'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+org/jruby/RubyArray.java:2412:in `map'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+org/jruby/RubyMethod.java:128:in `call'
+file:/D:/KumaWu/fire.app.1.14/fire-app.jar!/hook/compass_patch.rb:132:in `update_stylesheet'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
+org/jruby/RubyArray.java:1613:in `each'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
+org/jruby/RubyProc.java:271:in `call'
+D:/KumaWu/fire.app.1.14/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:252:in `on_change'
+D:/KumaWu/fire.app.1.14/lib/ruby/jruby/listen-1.3.1/lib/listen/listener.rb:290:in `initialize_adapter'
+org/jruby/RubyProc.java:271:in `call'
+D:/KumaWu/fire.app.1.14/lib/ruby/jruby/listen-1.3.1/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+D:/KumaWu/fire.app.1.14/lib/ruby/jruby/listen-1.3.1/lib/listen/adapter.rb:297:in `start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: demo.\A        Load paths:\A          Compass::SpriteImporter\A          D:/KumaWu/04_webproject/NG-hackathon/sass\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/susy-2.1.3/sass\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-normalize-1.5/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-h5bp-0.1.2/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/compass-960-plugin-0.10.4/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/html5-boilerplate-2.1.0/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/sassy-maps-0.4.0/sass\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/breakpoint-2.5.0/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/zurb-foundation-5.3.0/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/fire-app-example/stylesheets\A          D:/KumaWu/fire.app.1.14/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets\A         on line 5 of D:/KumaWu/04_webproject/NG-hackathon/sass/main.scss\A \A 1: @import \"compass/css3\";\A 2: @import \"mixin\";\A 3: @import \"variable\";\A 4: @import \"swiper\";\A 5: @import \"demo\";\A 6: @import \"nav\";\A 7: @import \"card\";\A 8: @import \"footer\";\A 9: @import \"signup\";\A 10: "; }

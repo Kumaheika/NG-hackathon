@@ -1,0 +1,59 @@
+// 圖片 MockUP 專用 Css
+.demo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  img {
+    width: 100%;
+    &.xs {
+      display: block;
+      @include pad_under {
+        display: none;
+      }
+    }
+    &.sm {
+      display: none;
+      @include pad_under {
+        display: block;
+      }
+      @include desktop_under {
+        display: none;
+      }
+    }
+    &.md {
+      display: none;
+      @include desktop_under {
+        display: block;
+      }
+      @include bigger_under {
+        display: none;
+      }
+    }
+    &.lg {
+      display: none;
+      @include bigger_under {
+        display: block;
+      }
+    }
+  }
+  @include pad_under {
+    width: 768px;
+  }
+  @include desktop_under {
+    width: 1024px;
+  }
+  @include bigger_under {
+    width: 1440px;
+  }
+  .signup {
+    position: absolute;
+    width: 380px;
+    height: 60px;
+    border: 4px solid rgba(238, 164, 37, .5);
+    top: 955px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}

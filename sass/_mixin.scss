@@ -1,0 +1,29 @@
+@import "compass/css3";
+
+/* =============== Mixin =================*/
+//RWD-平板尺寸
+@mixin pad_below {
+  @media screen and (max-width: 767px) {
+      @content;
+  }
+}
+@mixin desktop_below {
+  @media screen and (max-width: 991px) {
+      @content;
+  }
+}
+@mixin pad_under {
+  @media screen and (min-width: 768px) {
+      @content;
+  }
+}
+@mixin desktop_under {
+  @media screen and (min-width: 992px) {
+      @content;
+  }
+}
+@mixin bigger_under {
+  @media screen and (min-width: 1200px) {
+      @content;
+  }
+}

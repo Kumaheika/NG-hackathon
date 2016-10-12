@@ -1,0 +1,60 @@
+//變數-全域
+$web_fontsize: 16px;
+$web_font: 'Helvetica','微軟正黑體', Arial, Helvetica, sans-serif;
+$color01: #1a5687;
+$color02: #163972;
+$color03: #efa143;
+$color04: #f58831;
+$color05: #f2f2f2;
+$color06: #e0e0e0;
+$color07: #23333d;
+
+$font_color01: #163972;
+$font_color02: #444444;
+$font_color03: #808285;
+$font_color04: #acacac;
+
+$body_bg01: #FFF;
+
+$shodow_la: 0 15px 30px -5px rgba(0,0,0,0.4);
+$shodow_m: 0 0 14px 0 rgba(0,0,0,0.15);
+$shodow_nav: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+
+//陰影參數
+$shadow_S: 0 0px 0px 0 rgba(0,0,0,0),0 0px 0px 0 rgba(0,0,0,0);
+$shadow_L: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+//上方 header 高度
+$headerHeight: 60px;
+//Slide Show 高度
+$slideHeight: 360px;
+//Footer 高度
+$footHeight: 120px;
+
+
+//row 的上下左右 padding
+$rowPadfingTb: 1rem;
+$rowPadfingLR: 1rem;
+
+//內容標題 h1 的 padding-bottom
+$h1_pb: 2.5em;
+
+//內容 p 的設定
+$p_pa: 24px;
+$p_mobile_padding: 15px;
+$p_pa_s: 4px;
+
+//icon font
+$inline_text: .5rem;
+
+//表格跳格顏色
+$tabel_even: lighten($color01, 30%);
+$table_td_pa: 12px;
+
+//form 設定
+$form_group_pa: 10px;
+$input_hight: 40px;
+$input_hight_lar: 50px;
+$input_fsize: 1em;
+$input_pad_LR: 20px;
+$input_bdr: 6px;

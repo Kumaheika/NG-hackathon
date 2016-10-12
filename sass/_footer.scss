@@ -1,0 +1,21 @@
+.footer {
+  height: $footHeight;
+  background: $color02;
+  padding: 20px 0;
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+    img {
+      width: 66px;
+      height: 40px;
+      padding: 0;
+      margin: 0;
+    }
+    p {
+      font-size: .8rem;
+      color: #FFF;
+      padding: 10px 0;
+      margin: 0;
+    }
+  }
+}
