@@ -1,19 +1,19 @@
 .card {
   display: block;
   position: relative;
-  border: 1px solid $color05;
+  border: 1px solid $color_border;
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 40px;
   &:hover {
     .card_infor_title {
-      color: $color04;
+      color: $color01;
     }
   }
   .card_img {
     width: 100%;
     min-height: 226px;
-    background: darken($color07, 5%) center center no-repeat;
+    background: darken($color01, 5%) center center no-repeat;
     overflow: hidden;
     img {
       width: 100%;
@@ -40,7 +40,7 @@
       @include transition( .3s all);
     }
     p {
-      color: $font_color04;
+      color: $color_font;
       font-size: .9rem;
       line-height: 1.5rem;
     }
@@ -54,16 +54,16 @@
     a {
       display: block;
       height: 48px;
-      background: linear-gradient(left, $color01, $color02);
+      background: linear-gradient(left, $color01, $color01);
       color: #FFF;
       font-weight: 700;
       line-height: 48px;
       &:hover {
-        background: linear-gradient(left, $color03, $color04);
+        background: linear-gradient(left, $color01, $color01);
       }
       &.unSign {
-        color: $font_color03;
-        background: linear-gradient(left, $color05, $color06);
+        color: $color_font;
+        background: linear-gradient(left, $color01, $color01);
       }
     }
   }
