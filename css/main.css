@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* =============== Mixin =================*/
-@import "https://fonts.googleapis.com/css?family=Open+Sans";
 /* line 1, ../sass/_swiper.scss */
 .swiper-container {
   position: relative;
@@ -259,31 +258,31 @@
   background: linear-gradient(to right, #1a5687, #1a5687);
 }
 
-/* line 26, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 * {
   box-sizing: border-box;
   font-family: "Helvetica", "微軟正黑體", Arial, Helvetica, sans-serif;
 }
 
-/* line 30, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 body {
   font-size: 18px;
   color: #444;
   line-height: 1.8;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 p {
   margin: 0;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .horizontal.divider {
   display: table;
   white-space: nowrap;
@@ -292,13 +291,13 @@ p {
   line-height: 1;
   text-align: center;
 }
-/* line 51, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 .horizontal.divider.style {
   font-size: 18px;
   color: #FFF;
   padding: 10px 0;
 }
-/* line 56, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 .horizontal.divider:before, .horizontal.divider:after {
   content: ' ';
   display: table-cell;
@@ -308,23 +307,23 @@ p {
   background-repeat: no-repeat;
   background-image: url("../images/line.png");
 }
-/* line 65, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .horizontal.divider:before {
   background-position: right 1em top 50%;
 }
-/* line 68, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .horizontal.divider:after {
   background-position: left 1em top 50%;
 }
 
-/* line 74, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 .clearfix:after {
   content: ' ';
   display: block;
   clear: both;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 .hovereffect {
   -moz-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
   -webkit-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
@@ -334,7 +333,7 @@ p {
   -webkit-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
 }
-/* line 84, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 .hovereffect:hover {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -356,7 +355,7 @@ p {
     opacity: .5;
   }
 }
-/* line 97, ../sass/main.scss */
+/* line 96, ../sass/main.scss */
 .warp {
   position: relative;
   width: 100%;
@@ -364,7 +363,7 @@ p {
   background: url("../images/background_1440.jpg") center no-repeat;
   background-size: cover;
 }
-/* line 103, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .warp:after {
   content: ' ';
   display: block;
@@ -380,7 +379,7 @@ p {
   animation: fadeIn 5s;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 117, ../sass/main.scss */
 .form-signin {
   position: absolute;
   top: 50%;
@@ -397,6 +396,9 @@ p {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* line 130, ../sass/main.scss */
 .form-signin a, .form-signin p {
