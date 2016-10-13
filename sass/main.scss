@@ -158,11 +158,26 @@ p {
     border: none;
     margin-bottom: 10px;
     @include border-radius (0);
+    &.btn {
+      position: relative;
+      top: 0;
+      @include transition (.3s);
+    }
     &.fb {
       background-color: #5da8ff;
+      @include box-shadow(0px 0px 0px 0px darken(#5da8ff, 20%));
+      &:hover {
+        top: -6px;
+        @include box-shadow(0px 6px 0px 0px darken(#5da8ff, 20%));
+      }
     }
     &.google {
       background-color: #ff8896;
+      @include box-shadow(0px 0px 0px 0px darken(#ff8896, 20%));
+      &:hover {
+        top: -6px;
+        @include box-shadow(0px 6px 0px 0px darken(#ff8896, 20%));
+      }
     }
     &.input {
       color: $color_font;
@@ -171,6 +186,11 @@ p {
     }
     &.login {
       background-color: #4a90e2;
+      @include box-shadow(0px 0px 0px 0px darken(#4a90e2, 20%));
+      &:hover {
+        top: -6px;
+        @include box-shadow(0px 6px 0px 0px darken(#4a90e2, 20%));
+      }
     }
   }
   .forgot {
