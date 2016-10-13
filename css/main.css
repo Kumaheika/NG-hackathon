@@ -426,8 +426,9 @@ p {
   z-index: 1;
   left: 20px;
   top: 6px;
+  opacity: .5;
 }
-/* line 153, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .form-signin .form-control {
   height: 50px;
   font-size: 18px;
@@ -438,7 +439,7 @@ p {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 161, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .form-signin .form-control.btn {
   position: relative;
   top: 0;
@@ -447,66 +448,66 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 166, ../sass/main.scss */
+/* line 167, ../sass/main.scss */
 .form-signin .form-control.fb {
   background-color: #5da8ff;
   -moz-box-shadow: 0px 0px 0px 0px #0072f6;
   -webkit-box-shadow: 0px 0px 0px 0px #0072f6;
   box-shadow: 0px 0px 0px 0px #0072f6;
 }
-/* line 169, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 .form-signin .form-control.fb:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #0072f6;
   -webkit-box-shadow: 0px 6px 0px 0px #0072f6;
   box-shadow: 0px 6px 0px 0px #0072f6;
 }
-/* line 174, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .form-signin .form-control.google {
   background-color: #ff8896;
   -moz-box-shadow: 0px 0px 0px 0px #ff223c;
   -webkit-box-shadow: 0px 0px 0px 0px #ff223c;
   box-shadow: 0px 0px 0px 0px #ff223c;
 }
-/* line 177, ../sass/main.scss */
+/* line 178, ../sass/main.scss */
 .form-signin .form-control.google:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #ff223c;
   -webkit-box-shadow: 0px 6px 0px 0px #ff223c;
   box-shadow: 0px 6px 0px 0px #ff223c;
 }
-/* line 182, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .form-signin .form-control.input {
   color: #444;
   border: solid 1px #b4b4b4;
   padding-left: 50px;
 }
-/* line 187, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .form-signin .form-control.login {
   background-color: #4a90e2;
   -moz-box-shadow: 0px 0px 0px 0px #1b5dab;
   -webkit-box-shadow: 0px 0px 0px 0px #1b5dab;
   box-shadow: 0px 0px 0px 0px #1b5dab;
 }
-/* line 190, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .form-signin .form-control.login:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #1b5dab;
   -webkit-box-shadow: 0px 6px 0px 0px #1b5dab;
   box-shadow: 0px 6px 0px 0px #1b5dab;
 }
-/* line 197, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .form-signin .forgot a {
   font-size: 14px;
   letter-spacing: .5px;
   padding: 0 6px;
 }
-/* line 201, ../sass/main.scss */
+/* line 202, ../sass/main.scss */
 .form-signin .forgot a:first-child {
   position: relative;
   padding-right: 10px;
 }
-/* line 204, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .form-signin .forgot a:first-child:after {
   content: ' ';
   position: absolute;
@@ -516,12 +517,12 @@ p {
   height: 100%;
   border-right: 1px solid #FFF;
 }
-/* line 217, ../sass/main.scss */
+/* line 218, ../sass/main.scss */
 .form-signin .join p {
   display: inline;
   letter-spacing: .5px;
 }
-/* line 221, ../sass/main.scss */
+/* line 222, ../sass/main.scss */
 .form-signin .join a {
   font-size: 24px;
   font-weight: bold;
