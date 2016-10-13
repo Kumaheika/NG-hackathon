@@ -1,4 +1,4 @@
-.swiper-container {
+.swiper-container, .swiper-container-glass {
   .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -9,7 +9,7 @@
   }
   position: relative;
   width: 100%;
-  height: 360px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
@@ -58,52 +58,28 @@
   background-repeat: no-repeat;
   background-position: center;
   &.slider01 {
-    background-image: url("../images/sliders/slider_01_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_01.jpg");
-    }
+    background-image: url("../images/sliders/slider01_1440.jpg");
   }
   &.slider02 {
-    background-image: url("../images/sliders/slider_02_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_02.jpg");
-    }
+    background-image: url("../images/sliders/slider02_1440.jpg");
   }
   &.slider03 {
-    background-image: url("../images/sliders/slider_03_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_03.jpg");
-    }
+    background-image: url("../images/sliders/slider03_1440.jpg");
   }
   &.slider04 {
-    background-image: url("../images/sliders/slider_04_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_04.jpg");
-    }
+    background-image: url("../images/sliders/slider04_1440.jpg");
   }
   &.slider05 {
-    background-image: url("../images/sliders/slider_05_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_05.jpg");
-    }
+    background-image: url("../images/sliders/slider05_1440.jpg");
   }
   &.slider06 {
-    background-image: url("../images/sliders/slider_06_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_06.jpg");
-    }
+    background-image: url("../images/sliders/slider06_1440.jpg");
   }
   &.slider07 {
-    background-image: url("../images/sliders/slider_07_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_07.jpg");
-    }
+    background-image: url("../images/sliders/slider07_1440.jpg");
   }
   &.slider08 {
-    background-image: url("../images/sliders/slider_08_768.jpg");
-    @include desktop_under {
-      background-image: url("../images/sliders/slider_08.jpg");
-    }
+    background-image: url("../images/sliders/slider08_1440.jpg");
   }
 }
 .swiper-slide img {
@@ -116,4 +92,17 @@
     left: 50%;
     margin-left: -960px;
   }
+}
+.swiper-container-glass {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
 }
