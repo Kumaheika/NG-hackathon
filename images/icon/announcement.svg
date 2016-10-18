@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>announcement</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="announcement" fill="#4A4A4A">
+            <path d="M14.25,14 L6.75,14 L6.75,8 C6.75,5.334 8.625,4 10.4990625,4 L10.5009375,4 C12.375,4 14.25,5.334 14.25,8 L14.25,14 Z M11.4375,17 C11.4375,17.552 11.0175,18 10.5,18 C9.9825,18 9.5625,17.552 9.5625,17 L9.5625,16 L11.4375,16 L11.4375,17 Z M16.125,14 L16.125,8 C16.125,4.447 13.905,2.475 11.4375,2.079 L11.4375,0 L9.5625,0 L9.5625,2.079 C7.095,2.475 4.875,4.447 4.875,8 L4.875,14 L3,14 L3,16 L7.6875,16 L7.6875,17 C7.6875,18.657 8.9465625,20 10.5,20 C12.0534375,20 13.3125,18.657 13.3125,17 L13.3125,16 L18,16 L18,14 L16.125,14 Z" id="notification_bell-[#1394]"></path>
+        </g>
+    </g>
+</svg>

@@ -4,6 +4,7 @@
 }
 .navbar-default {
   background-image: linear-gradient(to bottom, #ffffff, #cfcfcf);
+  border: none;
 }
 .navbar-nav > li > a {
   line-height: 40px;
@@ -14,11 +15,26 @@
     opacity: .5;
   }
 }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  opacity: 1 !important;
+  background-image: linear-gradient(to top, #cbcbcb, #9b9b9b);
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #4a90e2;
+  }
+}
 .navbar-default .navbar-brand {
   color: #4a4a4a;
 }
 .navbar-brand {
   height: 70px;
+  font-weight: bold;
   font-size: 24px;
   line-height: 40px;
 }
