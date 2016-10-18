@@ -34,10 +34,24 @@
   height: 400px;
 }
 .swiper-container-new, .swiper-container-trending {
-  height: 322px;
+  height: 302px;
   .swiper-slide {
     border-radius: 5px;
   }
+}
+.arrivals_right, .arrivals_left, .trending_right, .trending_left {
+  position: absolute;
+  top: 60%;
+  font-size: 24px;
+  color: #4a4a4a;
+  cursor: pointer;
+  opacity: .5;
+}
+.arrivals_right, .trending_right {
+  right: 10px;
+}
+.arrivals_left, .trending_left {
+  left: 10px;
 }
 .swiper-slide {
   text-align: center;
@@ -91,6 +105,31 @@
   &.slider08 {
     background-image: url("../images/sliders/slider08_1440.jpg");
   }
+  &.banner01 {background-image: url("../images/banner/01.png");}
+  &.banner02 {background-image: url("../images/banner/02.png");}
+  &.banner03 {background-image: url("../images/banner/03.png");}
+  &.banner04 {background-image: url("../images/banner/04.png");}
+  &.banner05 {background-image: url("../images/banner/05.png");}
+  &.banner06 {background-image: url("../images/banner/06.png");}
+  &.banner07 {background-image: url("../images/banner/07.png");}
+  &.banner08 {background-image: url("../images/banner/08.png");}
+
+  &.poster01 {background-image: url("../images/poster/01.png");}
+  &.poster02 {background-image: url("../images/poster/02.png");}
+  &.poster03 {background-image: url("../images/poster/03.png");}
+  &.poster04 {background-image: url("../images/poster/04.png");}
+  &.poster05 {background-image: url("../images/poster/05.png");}
+  &.poster06 {background-image: url("../images/poster/06.png");}
+  &.poster07 {background-image: url("../images/poster/07.png");}
+  &.poster08 {background-image: url("../images/poster/08.png");}
+  &.poster09 {background-image: url("../images/poster/09.png");}
+  &.poster10 {background-image: url("../images/poster/10.png");}
+  &.poster11 {background-image: url("../images/poster/11.png");}
+  &.poster12 {background-image: url("../images/poster/12.png");}
+  &.poster13 {background-image: url("../images/poster/13.png");}
+  &.poster14 {background-image: url("../images/poster/14.png");}
+  &.poster15 {background-image: url("../images/poster/15.png");}
+
 }
 .swiper-slide img {
   position: absolute;

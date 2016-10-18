@@ -40,9 +40,7 @@ body {
 p {
   margin: 0;
 }
-.overhide {
-  overflow: hidden;
-}
+
 
 //分隔線條
 .horizontal.divider {
@@ -104,122 +102,15 @@ p {
   height: 100%;
   // background: url("../images/background_1440.jpg") center no-repeat;
   background-size: cover;
-
   -webkit-backdrop-filter: blur(3.2px);
   background-color: rgba(255, 255, 255, 0.5);
 }
-.form-signin {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 446px;
-  height: 562px;
-  z-index: 5;
-  // height: 554px;
-  padding: 30px 38px;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-align: center;
+.overhide {
+  position: relative;
   overflow: hidden;
-  @include transform ( translateX(-50%) translateY(-50%) );
-  @include border-radius (5px);
-  @include box-shadow($shadow_L);
-  a, p {
-    color: #FFF;
-  }
-  &.low {
-    z-index: 3;
-  }
-  .logo {
-    height: 59px;
-    font-size: 48px;
-    color: #FFF;
-    letter-spacing: 1px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-  }
-  .form-group {
-    position: relative;
-    margin-bottom: 10px;
-    .user-icon {
-      display: block;
-      position: absolute;
-      z-index: 1;
-      left: 20px;
-      top: 6px;
-      opacity: .5;
-    }
-  }
-  .form-control {
-    height: 50px;
-    font-size: $web_fontsize;
-    color: #FFF;
-    border: none;
-    margin-bottom: 10px;
-    @include border-radius (0);
-    &.btn {
-      position: relative;
-      top: 0;
-      @include transition (.3s);
-    }
-    &.fb {
-      background-color: #5da8ff;
-      @include box-shadow(0px 0px 0px 0px darken(#5da8ff, 20%));
-      &:hover {
-        top: -6px;
-        @include box-shadow(0px 6px 0px 0px darken(#5da8ff, 20%));
-      }
-    }
-    &.google {
-      background-color: #ff8896;
-      @include box-shadow(0px 0px 0px 0px darken(#ff8896, 20%));
-      &:hover {
-        top: -6px;
-        @include box-shadow(0px 6px 0px 0px darken(#ff8896, 20%));
-      }
-    }
-    &.input {
-      color: $color_font;
-      border: solid 1px #b4b4b4;
-      padding-left: 50px;
-    }
-    &.login {
-      background-color: #4a90e2;
-      @include box-shadow(0px 0px 0px 0px darken(#4a90e2, 20%));
-      &:hover {
-        top: -6px;
-        @include box-shadow(0px 6px 0px 0px darken(#4a90e2, 20%));
-      }
-    }
-  }
-  .forgot {
-    a {
-      font-size: $web_fontsize - 4px;
-      letter-spacing: .5px;
-      padding: 0 6px;
-      &:first-child {
-        position: relative;
-        padding-right: 10px;
-        &:after {
-          content: ' ';
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 1px;
-          height: 100%;
-          border-right: 1px solid #FFF;
-        }
-      }
-    }
-  }
-  .join {
-    p {
-      display: inline;
-      letter-spacing: .5px;
-    }
-    a {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  }
+}
+.slider_range {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
 }
