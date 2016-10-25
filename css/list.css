@@ -461,37 +461,37 @@
   line-height: 40px;
 }
 
-/* line 26, ../sass/list.scss */
+/* line 28, ../sass/list.scss */
 * {
   box-sizing: border-box;
   font-family: "Helvetica", "微軟正黑體", Arial, Helvetica, sans-serif;
 }
 
-/* line 30, ../sass/list.scss */
+/* line 32, ../sass/list.scss */
 html, body {
   width: 100%;
   height: 100%;
   background: #FFF;
 }
 
-/* line 35, ../sass/list.scss */
+/* line 37, ../sass/list.scss */
 body {
   font-size: 18px;
   color: #444;
   line-height: 1.8;
 }
 
-/* line 40, ../sass/list.scss */
+/* line 42, ../sass/list.scss */
 p {
   margin: 0;
 }
 
-/* line 43, ../sass/list.scss */
+/* line 45, ../sass/list.scss */
 h2 {
   text-decoration: none;
 }
 
-/* line 49, ../sass/list.scss */
+/* line 51, ../sass/list.scss */
 .horizontal.divider {
   display: table;
   white-space: nowrap;
@@ -500,13 +500,13 @@ h2 {
   line-height: 1;
   text-align: center;
 }
-/* line 56, ../sass/list.scss */
+/* line 58, ../sass/list.scss */
 .horizontal.divider.style {
   font-size: 18px;
   color: #FFF;
   padding: 10px 0;
 }
-/* line 61, ../sass/list.scss */
+/* line 63, ../sass/list.scss */
 .horizontal.divider:before, .horizontal.divider:after {
   content: ' ';
   display: table-cell;
@@ -516,23 +516,23 @@ h2 {
   background-repeat: no-repeat;
   background-image: url("../images/line.png");
 }
-/* line 70, ../sass/list.scss */
+/* line 72, ../sass/list.scss */
 .horizontal.divider:before {
   background-position: right 1em top 50%;
 }
-/* line 73, ../sass/list.scss */
+/* line 75, ../sass/list.scss */
 .horizontal.divider:after {
   background-position: left 1em top 50%;
 }
 
-/* line 79, ../sass/list.scss */
+/* line 81, ../sass/list.scss */
 .clearfix:after {
   content: ' ';
   display: block;
   clear: both;
 }
 
-/* line 86, ../sass/list.scss */
+/* line 88, ../sass/list.scss */
 .hovereffect {
   -moz-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
   -webkit-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
@@ -542,7 +542,7 @@ h2 {
   -webkit-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
 }
-/* line 89, ../sass/list.scss */
+/* line 91, ../sass/list.scss */
 .hovereffect:hover {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -580,7 +580,7 @@ h2 {
     opacity: 1;
   }
 }
-/* line 111, ../sass/list.scss */
+/* line 113, ../sass/list.scss */
 .warp {
   position: relative;
   width: 100%;
@@ -591,16 +591,124 @@ h2 {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 121, ../sass/list.scss */
+/* line 123, ../sass/list.scss */
 .overhide {
   position: relative;
   overflow: hidden;
 }
 
-/* line 125, ../sass/list.scss */
+/* line 127, ../sass/list.scss */
 .slider_range {
   width: 95%;
   margin: auto;
   overflow: hidden;
   padding-bottom: 100px;
+}
+
+/* line 136, ../sass/list.scss */
+.content {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 140, ../sass/list.scss */
+.content .left {
+  float: left;
+  display: block;
+  min-height: 550px;
+  padding: 0 36px;
+  margin-right: 350px;
+}
+/* line 146, ../sass/list.scss */
+.content .left .movieBuy {
+  width: 100%;
+  height: 80px;
+  border-bottom: solid 1px #b4b4b4;
+  overflow: hidden;
+}
+/* line 151, ../sass/list.scss */
+.content .left .movieBuy > * {
+  float: right;
+  display: inline-block;
+  line-height: 80px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+/* line 159, ../sass/list.scss */
+.content .left .movieBuy .movie_name {
+  width: calc(100% - 390px);
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0 15px;
+}
+/* line 165, ../sass/list.scss */
+.content .left .movieBuy #buy {
+  position: relative;
+  top: 0;
+  width: 250px;
+  height: 50px;
+  color: #FFF;
+  background: #4a90e2;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -moz-box-shadow: 0px 0px 0px 0px #1b5dab;
+  -webkit-box-shadow: 0px 0px 0px 0px #1b5dab;
+  box-shadow: 0px 0px 0px 0px #1b5dab;
+}
+/* line 177, ../sass/list.scss */
+.content .left .movieBuy #buy:hover {
+  top: -6px;
+  -moz-box-shadow: 0px 6px 0px 0px #1b5dab;
+  -webkit-box-shadow: 0px 6px 0px 0px #1b5dab;
+  box-shadow: 0px 6px 0px 0px #1b5dab;
+}
+/* line 182, ../sass/list.scss */
+.content .left .movieBuy .stars {
+  width: 140px;
+  text-align: center;
+}
+/* line 188, ../sass/list.scss */
+.content .left .overview {
+  border-bottom: solid 1px #b4b4b4;
+  padding-bottom: 14px;
+}
+/* line 191, ../sass/list.scss */
+.content .left .overview .title {
+  color: #4a4a4a;
+  font-size: 36px;
+}
+/* line 195, ../sass/list.scss */
+.content .left .overview .read {
+  float: right;
+  display: inline-block;
+}
+/* line 199, ../sass/list.scss */
+.content .left .overview p {
+  color: #262626;
+  font-size: 20px;
+}
+/* line 205, ../sass/list.scss */
+.content .recommendations {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  min-height: 550px;
+  background: #f0f0f0;
+  padding: 30px 20px;
+}
+/* line 213, ../sass/list.scss */
+.content .recommendations .title {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  border-bottom: solid 1px #b4b4b4;
 }
