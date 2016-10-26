@@ -14,9 +14,11 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/star-rating.min.css">
   <link rel="stylesheet" href="css/list.css">
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/star-rating.min.js"></script>
 </head>
 <body>
   <div class="warp">
@@ -68,20 +70,8 @@
 
 
     <!-- 電影 slider -->
-    <div class="swiper-container-banner overhide">
-        <div class="swiper-wrapper">
-          <a class="swiper-slide slider_img banner01" href="#"></a>
-          <a class="swiper-slide slider_img banner02" href="#"></a>
-          <a class="swiper-slide slider_img banner03" href="#"></a>
-          <a class="swiper-slide slider_img banner04" href="#"></a>
-          <a class="swiper-slide slider_img banner05" href="#"></a>
-          <a class="swiper-slide slider_img banner06" href="#"></a>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next glyphicon glyphicon-chevron-right"></div>
-        <div class="swiper-button-prev glyphicon glyphicon-chevron-left"></div>
+    <div class="screen">
+        <video src="mov/DoctorStrange.mp4" autoplay controls></video>
     </div>
     <!-- slider -->
 
@@ -93,28 +83,43 @@
       <!-- 左半邊 -->
       <div class="left">
         <div class="movieBuy">
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input" min=0 max=5 step=0.5>
+          </div>
+          <!-- 購買按鈕 -->
           <button id="buy" type="button" class="btn buy">BUY</button>
-          <div class="stars">*****</div>
-          <h3 class="movie_name">Movie Nmae</h3>
         </div>
+
+        <!-- 電影介紹 -->
         <div class="overview clearfix">
           <h2 class="title">Overview</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit.</a> Vero cum, vel quo exercitationem voluptates sapiente architecto molestiae aperiam possimus, tempora eos earum harum dolorum adipisci nulla in incidunt. Consequatur, modi.</p>
-          <a class="read">Read more…</a>
+          <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit.</a> Vero cum, vel quo exercitationem voluptates sapiente architecto molestiae aperiam possimus, tempora eos earum harum dolorum adipisci nulla in incidunt. Consequatur, modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita, consequuntur excepturi aperiam sunt blanditiis quisquam fugiat, quia aliquid reiciendis corporis ratione iusto incidunt ipsa error maxime accusamus? Itaque, hic!</p>
+          <a href="#" class="read">Read more…</a>
         </div>
       </div>
 
 
       <!-- 右半邊 350 -->
       <div class="recommendations">
+        <!-- 標題 -->
         <h2 class="title">Recommendations</h2>
-        <div class="mov_view">
-          <video class="video"></video>
-          <div class="movie_name"></div>
-          <div class="stars"></div>
+
+        <!-- 其他推薦電影 -->
+        <!-- 影片 -->
+          <div class="mov_view">
+          <img class="movie" src="images/mov_view/001.png">
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input_s" min=0 max=5 step=0.5>
+          </div>
         </div>
-        <div class="mov_view"></div>
-        <div class="mov_view"></div>
+
+
       </div>
 
 
@@ -131,6 +136,19 @@
   <!-- swiper JS -->
   <script type="text/javascript" src="js/swiper.min.js"></script>
   <script>
+  $(".stars_input").rating(
+    {
+    'size':'xs',
+    'showClear':'',
+    'showCaption':'',
+  });  //带参数初始化
+  $(".stars_input_s").rating(
+    {
+    'size':'xs',
+    'showClear':'',
+    'showCaption':'',
+  });  //带参数初始化
+
   var swiper = new Swiper('.swiper-container-banner', {
       pagination: '.swiper-pagination',
       nextButton: '.swiper-button-next',

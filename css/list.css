@@ -526,7 +526,7 @@ h2 {
 }
 
 /* line 81, ../sass/list.scss */
-.clearfix:after {
+.clearfix:after, .content .recommendations .mov_view:after {
   content: ' ';
   display: block;
   clear: both;
@@ -605,13 +605,34 @@ h2 {
   padding-bottom: 100px;
 }
 
-/* line 136, ../sass/list.scss */
+/* line 135, ../sass/list.scss */
+.screen {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #000;
+  overflow: hidden;
+}
+/* line 141, ../sass/list.scss */
+.screen video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 400px;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 151, ../sass/list.scss */
 .content {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 140, ../sass/list.scss */
+/* line 155, ../sass/list.scss */
 .content .left {
   float: left;
   display: block;
@@ -619,30 +640,37 @@ h2 {
   padding: 0 36px;
   margin-right: 350px;
 }
-/* line 146, ../sass/list.scss */
+/* line 161, ../sass/list.scss */
 .content .left .movieBuy {
   width: 100%;
   height: 80px;
   border-bottom: solid 1px #b4b4b4;
   overflow: hidden;
 }
-/* line 151, ../sass/list.scss */
+/* line 166, ../sass/list.scss */
 .content .left .movieBuy > * {
-  float: right;
   display: inline-block;
   line-height: 80px;
   padding: 0;
   margin: 0;
   border: none;
 }
-/* line 159, ../sass/list.scss */
+@media screen and (min-width: 1200px) {
+  /* line 166, ../sass/list.scss */
+  .content .left .movieBuy > * {
+    float: left;
+  }
+}
+/* line 176, ../sass/list.scss */
 .content .left .movieBuy .movie_name {
-  width: calc(100% - 390px);
+  display: block;
+  width: calc(100% - 430px);
+  max-width: 530px;
   white-space: nowrap;
   overflow: hidden;
-  padding: 0 15px;
+  padding-right: 15px;
 }
-/* line 165, ../sass/list.scss */
+/* line 184, ../sass/list.scss */
 .content .left .movieBuy #buy {
   position: relative;
   top: 0;
@@ -661,39 +689,44 @@ h2 {
   -webkit-box-shadow: 0px 0px 0px 0px #1b5dab;
   box-shadow: 0px 0px 0px 0px #1b5dab;
 }
-/* line 177, ../sass/list.scss */
+/* line 196, ../sass/list.scss */
 .content .left .movieBuy #buy:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #1b5dab;
   -webkit-box-shadow: 0px 6px 0px 0px #1b5dab;
   box-shadow: 0px 6px 0px 0px #1b5dab;
 }
-/* line 182, ../sass/list.scss */
+/* line 201, ../sass/list.scss */
 .content .left .movieBuy .stars {
-  width: 140px;
+  width: 160px;
   text-align: center;
+  margin-right: 30px;
 }
-/* line 188, ../sass/list.scss */
+/* line 205, ../sass/list.scss */
+.content .left .movieBuy .stars .rating-xs {
+  font-size: 1.4em;
+}
+/* line 211, ../sass/list.scss */
 .content .left .overview {
   border-bottom: solid 1px #b4b4b4;
   padding-bottom: 14px;
 }
-/* line 191, ../sass/list.scss */
+/* line 214, ../sass/list.scss */
 .content .left .overview .title {
   color: #4a4a4a;
   font-size: 36px;
 }
-/* line 195, ../sass/list.scss */
+/* line 218, ../sass/list.scss */
 .content .left .overview .read {
   float: right;
   display: inline-block;
 }
-/* line 199, ../sass/list.scss */
+/* line 222, ../sass/list.scss */
 .content .left .overview p {
   color: #262626;
   font-size: 20px;
 }
-/* line 205, ../sass/list.scss */
+/* line 228, ../sass/list.scss */
 .content .recommendations {
   position: absolute;
   top: 0;
@@ -703,12 +736,56 @@ h2 {
   background: #f0f0f0;
   padding: 30px 20px;
 }
-/* line 213, ../sass/list.scss */
+/* line 236, ../sass/list.scss */
 .content .recommendations .title {
   font-size: 24px;
   color: #4a4a4a;
   margin: 0;
   padding: 0;
   padding-bottom: 24px;
+  margin-bottom: 24px;
   border-bottom: solid 1px #b4b4b4;
+}
+/* line 245, ../sass/list.scss */
+.content .recommendations .mov_view {
+  margin-bottom: 16px;
+}
+/* line 248, ../sass/list.scss */
+.content .recommendations .mov_view .movie {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #000;
+}
+/* line 253, ../sass/list.scss */
+.content .recommendations .mov_view .movie:after, .content .recommendations .mov_view .movie:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 260, ../sass/list.scss */
+.content .recommendations .mov_view .movie:after {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+}
+/* line 267, ../sass/list.scss */
+.content .recommendations .mov_view .movie_name {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #575757;
+  margin: 0;
+  padding: 0;
+}
+/* line 275, ../sass/list.scss */
+.content .recommendations .mov_view .stars {
+  float: right;
+}
+/* line 278, ../sass/list.scss */
+.content .recommendations .mov_view .rating-xs {
+  font-size: .8em;
 }
