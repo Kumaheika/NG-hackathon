@@ -751,28 +751,66 @@ h2 {
   margin-bottom: 16px;
 }
 /* line 248, ../sass/list.scss */
-.content .recommendations .mov_view .movie {
+.content .recommendations .mov_view .mov_img {
   position: relative;
-  width: 300px;
+  display: block;
+  width: 100%;
   height: 200px;
   background: #000;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
-/* line 253, ../sass/list.scss */
-.content .recommendations .mov_view .movie:after, .content .recommendations .mov_view .movie:before {
+/* line 256, ../sass/list.scss */
+.content .recommendations .mov_view .mov_img img {
+  width: 100%;
+  height: auto;
+}
+/* line 261, ../sass/list.scss */
+.content .recommendations .mov_view .mov_img:hover:after {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  z-index: 3;
+}
+/* line 269, ../sass/list.scss */
+.content .recommendations .mov_view .mov_img:after, .content .recommendations .mov_view .mov_img:before {
   content: ' ';
   display: block;
   position: absolute;
   top: 0;
   left: 0;
 }
-/* line 260, ../sass/list.scss */
-.content .recommendations .mov_view .movie:after {
+/* line 276, ../sass/list.scss */
+.content .recommendations .mov_view .mov_img:after {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: #000;
+  opacity: .7;
   z-index: 3;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
-/* line 267, ../sass/list.scss */
+/* line 284, ../sass/list.scss */
+.content .recommendations .mov_view .mov_img:before {
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon/play-1001.svg") no-repeat center center;
+  z-index: 5;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 295, ../sass/list.scss */
 .content .recommendations .mov_view .movie_name {
   display: block;
   float: left;
@@ -781,11 +819,11 @@ h2 {
   margin: 0;
   padding: 0;
 }
-/* line 275, ../sass/list.scss */
+/* line 303, ../sass/list.scss */
 .content .recommendations .mov_view .stars {
   float: right;
 }
-/* line 278, ../sass/list.scss */
+/* line 306, ../sass/list.scss */
 .content .recommendations .mov_view .rating-xs {
   font-size: .8em;
 }
