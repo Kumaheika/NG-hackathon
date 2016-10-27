@@ -160,9 +160,14 @@ h2 {
     margin-right: 350px;
     .movieBuy {
       width: 100%;
-      height: 80px;
+      height: auto;
+      padding-bottom: 16px;
       border-bottom: solid 1px #b4b4b4;
       overflow: hidden;
+      @include bigger_under {
+        height: 80px;
+        padding-bottom: 0;
+      };
       &>* {
         display: inline-block;
         line-height: 80px;
@@ -180,6 +185,10 @@ h2 {
         white-space:nowrap;
         overflow: hidden;
         padding-right: 15px;
+        line-height: 60px;
+        @include bigger_under {
+          line-height: 80px;
+        };
       }
       #buy {
         position: relative;
@@ -220,8 +229,11 @@ h2 {
         display: inline-block;
       }
       p {
+        display: block;
         color: #262626;
         font-size: 20px;
+        height: 180px;
+        overflow: hidden;
       }
     }
   }
@@ -246,10 +258,6 @@ h2 {
       @extend .clearfix;
       margin-bottom: 16px;
       .mov_img {
-<<<<<<< HEAD
-        display: block;
-=======
->>>>>>> origin/gh-pages
         position: relative;
         display: block;
         width: 100%;
@@ -280,14 +288,6 @@ h2 {
         &:after {
           width: 100%;
           height: 100%;
-<<<<<<< HEAD
-          background: rgba(0, 0, 0, .7);
-          z-index: 99;
-        }
-        img {
-          width: 100%;
-          height: auto;
-=======
           background: #000;
           opacity: .7;
           z-index: 3;
@@ -302,7 +302,6 @@ h2 {
           z-index: 5;
           @include transform(translateX(-50%));
           @include transform(translateY(-50%));
->>>>>>> origin/gh-pages
         }
       }
       .movie_name {
