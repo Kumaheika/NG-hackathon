@@ -405,32 +405,93 @@
   background: linear-gradient(to right, #1a5687, #1a5687);
 }
 
-/* line 25, ../sass/main.scss */
+/* line 1, ../sass/_nav.scss */
+.navbar {
+  min-height: 70px;
+  margin-bottom: 0;
+}
+
+/* line 5, ../sass/_nav.scss */
+.navbar-default {
+  background-image: linear-gradient(to bottom, #ffffff, #cfcfcf);
+  border: none;
+}
+
+/* line 9, ../sass/_nav.scss */
+.navbar-nav > li > a {
+  line-height: 40px;
+}
+
+/* line 12, ../sass/_nav.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #4a4a4a;
+}
+/* line 14, ../sass/_nav.scss */
+.navbar-default .navbar-nav > li > a.opacity {
+  opacity: .5;
+}
+
+/* line 18, ../sass/_nav.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  opacity: 1 !important;
+  background-image: linear-gradient(to top, #cbcbcb, #9b9b9b);
+}
+/* line 21, ../sass/_nav.scss */
+.navbar-default .navbar-nav > .active > a:after, .navbar-default .navbar-nav > .active > a:hover:after, .navbar-default .navbar-nav > .active > a:focus:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #4a90e2;
+}
+
+/* line 32, ../sass/_nav.scss */
+.navbar-default .navbar-brand {
+  color: #4a4a4a;
+}
+
+/* line 35, ../sass/_nav.scss */
+.navbar-brand {
+  height: 70px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+/* line 28, ../sass/main.scss */
 * {
   box-sizing: border-box;
   font-family: "Helvetica", "微軟正黑體", Arial, Helvetica, sans-serif;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 html, body {
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #FFF;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 body {
   font-size: 18px;
   color: #444;
   line-height: 1.8;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 p {
   margin: 0;
 }
 
-/* line 44, ../sass/main.scss */
+/* line 45, ../sass/main.scss */
+h2 {
+  text-decoration: none;
+}
+
+/* line 50, ../sass/main.scss */
 .horizontal.divider {
   display: table;
   white-space: nowrap;
@@ -439,13 +500,13 @@ p {
   line-height: 1;
   text-align: center;
 }
-/* line 51, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .horizontal.divider.style {
   font-size: 18px;
   color: #FFF;
   padding: 10px 0;
 }
-/* line 56, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .horizontal.divider:before, .horizontal.divider:after {
   content: ' ';
   display: table-cell;
@@ -455,23 +516,23 @@ p {
   background-repeat: no-repeat;
   background-image: url("../images/line.png");
 }
-/* line 65, ../sass/main.scss */
+/* line 71, ../sass/main.scss */
 .horizontal.divider:before {
   background-position: right 1em top 50%;
 }
-/* line 68, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 .horizontal.divider:after {
   background-position: left 1em top 50%;
 }
 
-/* line 74, ../sass/main.scss */
-.clearfix:after {
+/* line 80, ../sass/main.scss */
+.clearfix:after, .content .recommendations .mov_view:after {
   content: ' ';
   display: block;
   clear: both;
 }
 
-/* line 81, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 .hovereffect {
   -moz-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
   -webkit-box-shadow: 0 0px 0px 0 transparent, 0 0px 0px 0 transparent;
@@ -481,7 +542,7 @@ p {
   -webkit-transition: box-shadow 0.25s;
   transition: box-shadow 0.25s;
 }
-/* line 84, ../sass/main.scss */
+/* line 90, ../sass/main.scss */
 .hovereffect:hover {
   -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -503,7 +564,7 @@ p {
     opacity: .6;
   }
 }
-/* line 97, ../sass/main.scss */
+/* line 103, ../sass/main.scss */
 .warp {
   position: relative;
   width: 100%;
@@ -512,7 +573,7 @@ p {
   -webkit-backdrop-filter: blur(3.2px);
   background-color: rgba(255, 255, 255, 0.5);
 }
-/* line 106, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .warp:after {
   content: ' ';
   display: block;
@@ -527,8 +588,25 @@ p {
   -webkit-animation: fadeIn 5s;
   animation: fadeIn 5s;
 }
+/* line 125, ../sass/main.scss */
+.warp.page {
+  margin-bottom: 100px;
+}
+/* line 127, ../sass/main.scss */
+.warp.page:after {
+  content: '';
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  background: none;
+  opacity: 0;
+}
 
-/* line 121, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .form-signin {
   position: absolute;
   top: 50%;
@@ -551,15 +629,15 @@ p {
   -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* line 136, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .form-signin a, .form-signin p {
   color: #FFF;
 }
-/* line 139, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .form-signin.low {
   z-index: 3;
 }
-/* line 142, ../sass/main.scss */
+/* line 162, ../sass/main.scss */
 .form-signin .logo {
   height: 59px;
   font-size: 48px;
@@ -569,12 +647,12 @@ p {
   font-style: normal;
   font-stretch: normal;
 }
-/* line 151, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .form-signin .form-group {
   position: relative;
   margin-bottom: 10px;
 }
-/* line 154, ../sass/main.scss */
+/* line 174, ../sass/main.scss */
 .form-signin .form-group .user-icon {
   display: block;
   position: absolute;
@@ -583,7 +661,7 @@ p {
   top: 6px;
   opacity: .5;
 }
-/* line 163, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .form-signin .form-control {
   height: 50px;
   font-size: 18px;
@@ -594,7 +672,7 @@ p {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 170, ../sass/main.scss */
+/* line 190, ../sass/main.scss */
 .form-signin .form-control.btn {
   position: relative;
   top: 0;
@@ -603,66 +681,66 @@ p {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-/* line 175, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .form-signin .form-control.fb {
   background-color: #5da8ff;
   -moz-box-shadow: 0px 0px 0px 0px #0072f6;
   -webkit-box-shadow: 0px 0px 0px 0px #0072f6;
   box-shadow: 0px 0px 0px 0px #0072f6;
 }
-/* line 178, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .form-signin .form-control.fb:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #0072f6;
   -webkit-box-shadow: 0px 6px 0px 0px #0072f6;
   box-shadow: 0px 6px 0px 0px #0072f6;
 }
-/* line 183, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 .form-signin .form-control.google {
   background-color: #ff8896;
   -moz-box-shadow: 0px 0px 0px 0px #ff223c;
   -webkit-box-shadow: 0px 0px 0px 0px #ff223c;
   box-shadow: 0px 0px 0px 0px #ff223c;
 }
-/* line 186, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .form-signin .form-control.google:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #ff223c;
   -webkit-box-shadow: 0px 6px 0px 0px #ff223c;
   box-shadow: 0px 6px 0px 0px #ff223c;
 }
-/* line 191, ../sass/main.scss */
+/* line 211, ../sass/main.scss */
 .form-signin .form-control.input {
   color: #444;
   border: solid 1px #b4b4b4;
   padding-left: 50px;
 }
-/* line 196, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .form-signin .form-control.login {
   background-color: #4a90e2;
   -moz-box-shadow: 0px 0px 0px 0px #1b5dab;
   -webkit-box-shadow: 0px 0px 0px 0px #1b5dab;
   box-shadow: 0px 0px 0px 0px #1b5dab;
 }
-/* line 199, ../sass/main.scss */
+/* line 219, ../sass/main.scss */
 .form-signin .form-control.login:hover {
   top: -6px;
   -moz-box-shadow: 0px 6px 0px 0px #1b5dab;
   -webkit-box-shadow: 0px 6px 0px 0px #1b5dab;
   box-shadow: 0px 6px 0px 0px #1b5dab;
 }
-/* line 206, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .form-signin .forgot a {
   font-size: 14px;
   letter-spacing: .5px;
   padding: 0 6px;
 }
-/* line 210, ../sass/main.scss */
+/* line 230, ../sass/main.scss */
 .form-signin .forgot a:first-child {
   position: relative;
   padding-right: 10px;
 }
-/* line 213, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .form-signin .forgot a:first-child:after {
   content: ' ';
   position: absolute;
@@ -672,13 +750,293 @@ p {
   height: 100%;
   border-right: 1px solid #FFF;
 }
-/* line 226, ../sass/main.scss */
+/* line 246, ../sass/main.scss */
 .form-signin .join p {
   display: inline;
   letter-spacing: .5px;
 }
-/* line 230, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .form-signin .join a {
   font-size: 24px;
   font-weight: bold;
+}
+
+/* line 259, ../sass/main.scss */
+.overhide {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 263, ../sass/main.scss */
+.slider_range {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+/* line 272, ../sass/main.scss */
+.screen {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #000;
+  overflow: hidden;
+}
+/* line 278, ../sass/main.scss */
+.screen video {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 400px;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 288, ../sass/main.scss */
+.content {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 292, ../sass/main.scss */
+.content .left {
+  float: left;
+  display: block;
+  min-height: 550px;
+  padding: 0 36px;
+  margin-right: 350px;
+}
+/* line 298, ../sass/main.scss */
+.content .left .movieBuy {
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+  border-bottom: solid 1px #b4b4b4;
+  overflow: hidden;
+}
+@media screen and (min-width: 1200px) {
+  /* line 298, ../sass/main.scss */
+  .content .left .movieBuy {
+    height: 80px;
+    padding-bottom: 0;
+  }
+}
+/* line 308, ../sass/main.scss */
+.content .left .movieBuy > * {
+  display: inline-block;
+  line-height: 80px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+@media screen and (min-width: 1200px) {
+  /* line 308, ../sass/main.scss */
+  .content .left .movieBuy > * {
+    float: left;
+  }
+}
+/* line 318, ../sass/main.scss */
+.content .left .movieBuy .movie_name {
+  display: block;
+  width: calc(100% - 430px);
+  max-width: 530px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-right: 15px;
+  line-height: 60px;
+}
+@media screen and (min-width: 1200px) {
+  /* line 318, ../sass/main.scss */
+  .content .left .movieBuy .movie_name {
+    line-height: 80px;
+  }
+}
+/* line 330, ../sass/main.scss */
+.content .left .movieBuy #buy {
+  position: relative;
+  top: 0;
+  width: 250px;
+  height: 50px;
+  color: #FFF;
+  background: #4a90e2;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -moz-box-shadow: 0px 0px 0px 0px #1b5dab;
+  -webkit-box-shadow: 0px 0px 0px 0px #1b5dab;
+  box-shadow: 0px 0px 0px 0px #1b5dab;
+}
+/* line 342, ../sass/main.scss */
+.content .left .movieBuy #buy:hover {
+  top: -6px;
+  -moz-box-shadow: 0px 6px 0px 0px #1b5dab;
+  -webkit-box-shadow: 0px 6px 0px 0px #1b5dab;
+  box-shadow: 0px 6px 0px 0px #1b5dab;
+}
+/* line 347, ../sass/main.scss */
+.content .left .movieBuy .stars {
+  width: 160px;
+  text-align: center;
+  margin-right: 30px;
+}
+/* line 351, ../sass/main.scss */
+.content .left .movieBuy .stars .rating-xs {
+  font-size: 1.4em;
+}
+/* line 357, ../sass/main.scss */
+.content .left .overview {
+  border-bottom: solid 1px #b4b4b4;
+  padding-bottom: 14px;
+}
+/* line 360, ../sass/main.scss */
+.content .left .overview .title {
+  color: #4a4a4a;
+  font-size: 36px;
+}
+/* line 364, ../sass/main.scss */
+.content .left .overview .read {
+  float: right;
+  display: inline-block;
+}
+/* line 368, ../sass/main.scss */
+.content .left .overview .txt {
+  display: block;
+  position: relative;
+  color: #262626;
+  font-size: 20px;
+  height: 180px;
+  overflow: hidden;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/* line 376, ../sass/main.scss */
+.content .left .overview .txt:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+}
+/* line 386, ../sass/main.scss */
+.content .left .overview .txt.active {
+  height: auto;
+  padding-bottom: 50px;
+}
+/* line 389, ../sass/main.scss */
+.content .left .overview .txt.active:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+/* line 396, ../sass/main.scss */
+.content .recommendations {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  min-height: 550px;
+  background: #f0f0f0;
+  padding: 30px 20px;
+}
+/* line 404, ../sass/main.scss */
+.content .recommendations .title {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: solid 1px #b4b4b4;
+}
+/* line 413, ../sass/main.scss */
+.content .recommendations .mov_view {
+  margin-bottom: 16px;
+}
+/* line 416, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: #000;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+/* line 424, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img img {
+  width: 100%;
+  height: auto;
+}
+/* line 429, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img:hover:after {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .5;
+  z-index: 3;
+}
+/* line 437, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img:after, .content .recommendations .mov_view .mov_img:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 444, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img:after {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .7;
+  z-index: 3;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+/* line 452, ../sass/main.scss */
+.content .recommendations .mov_view .mov_img:before {
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background: url("../images/icon/play-1001.svg") no-repeat center center;
+  z-index: 5;
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 463, ../sass/main.scss */
+.content .recommendations .mov_view .movie_name {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #575757;
+  margin: 0;
+  padding: 0;
+}
+/* line 471, ../sass/main.scss */
+.content .recommendations .mov_view .stars {
+  float: right;
+}
+/* line 474, ../sass/main.scss */
+.content .recommendations .mov_view .rating-xs {
+  font-size: .8em;
 }

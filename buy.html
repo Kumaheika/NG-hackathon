@@ -15,13 +15,14 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/star-rating.min.css">
-  <link rel="stylesheet" href="css/list.css">
+  <link rel="stylesheet" href="css/main.css">
   <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="js/star-rating.min.js"></script>
+  <script type="text/javascript" src="js/buy.js"></script>
 </head>
 <body>
-  <div class="warp">
+  <div class="warp page">
 
 
     <!-- 上方主選單 -->
@@ -158,26 +159,10 @@
 
     </div><!-- content -->
 
-
-
-
-
-
-
   </div><!-- warp -->
 
-  <!-- swiper JS -->
-  <script type="text/javascript" src="js/swiper.min.js"></script>
+  <!-- 星星控制 -->
   <script>
-  $(function () {
-    var read = $('.read'),
-        txt = $('.txt');
-    read.click(function (e) {
-      e.preventDefault();
-      $(this).hide();
-      txt.addClass('active');
-    })
-  })
   $(".stars_input").rating(
     {
     'size':'xs',
@@ -193,35 +178,6 @@
     'showCaption':'',
     'displayOnly': true,
   });  //带参数初始化
-
-  var swiper = new Swiper('.swiper-container-banner', {
-      pagination: '.swiper-pagination',
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-      autoplay : 3000,
-      slidesPerView: 1,
-      paginationClickable: true,
-      spaceBetween: 30,
-      loop: true
-  });
-  var swiper = new Swiper('.swiper-container-new', {
-      pagination: '.swiper-pagination',
-      nextButton: '.arrivals_right',
-      prevButton: '.arrivals_left',
-      slidesPerView: 5,
-      paginationClickable: true,
-      spaceBetween: 30,
-      loop: true
-  });
-  var swiper = new Swiper('.swiper-container-trending', {
-      pagination: '.swiper-pagination',
-      nextButton: '.trending_right',
-      prevButton: '.trending_left',
-      slidesPerView: 5,
-      paginationClickable: true,
-      spaceBetween: 30,
-      loop: true
-  });
   </script>
 </body>
 </html>
