@@ -245,7 +245,8 @@ h2 {
     .mov_view {
       @extend .clearfix;
       margin-bottom: 16px;
-      .movie {
+      .mov_img {
+        display: block;
         position: relative;
         width: 300px;
         height: 200px;
@@ -261,7 +262,11 @@ h2 {
           width: 100%;
           height: 100%;
           background: rgba(0, 0, 0, .7);
-          z-index: 3;
+          z-index: 99;
+        }
+        img {
+          width: 100%;
+          height: auto;
         }
       }
       .movie_name {
