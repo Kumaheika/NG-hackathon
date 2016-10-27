@@ -737,14 +737,39 @@ h2 {
   display: inline-block;
 }
 /* line 231, ../sass/list.scss */
-.content .left .overview p {
+.content .left .overview .txt {
   display: block;
+  position: relative;
   color: #262626;
   font-size: 20px;
   height: 180px;
   overflow: hidden;
+  -moz-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
-/* line 240, ../sass/list.scss */
+/* line 239, ../sass/list.scss */
+.content .left .overview .txt:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+}
+/* line 249, ../sass/list.scss */
+.content .left .overview .txt.active {
+  height: auto;
+  padding-bottom: 50px;
+}
+/* line 252, ../sass/list.scss */
+.content .left .overview .txt.active:after {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+}
+/* line 259, ../sass/list.scss */
 .content .recommendations {
   position: absolute;
   top: 0;
@@ -754,7 +779,7 @@ h2 {
   background: #f0f0f0;
   padding: 30px 20px;
 }
-/* line 248, ../sass/list.scss */
+/* line 267, ../sass/list.scss */
 .content .recommendations .title {
   font-size: 24px;
   color: #4a4a4a;
@@ -764,11 +789,11 @@ h2 {
   margin-bottom: 24px;
   border-bottom: solid 1px #b4b4b4;
 }
-/* line 257, ../sass/list.scss */
+/* line 276, ../sass/list.scss */
 .content .recommendations .mov_view {
   margin-bottom: 16px;
 }
-/* line 260, ../sass/list.scss */
+/* line 279, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img {
   position: relative;
   display: block;
@@ -778,12 +803,12 @@ h2 {
   margin-bottom: 10px;
   overflow: hidden;
 }
-/* line 268, ../sass/list.scss */
+/* line 287, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img img {
   width: 100%;
   height: auto;
 }
-/* line 273, ../sass/list.scss */
+/* line 292, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img:hover:after {
   width: 100%;
   height: 100%;
@@ -791,7 +816,7 @@ h2 {
   opacity: .5;
   z-index: 3;
 }
-/* line 281, ../sass/list.scss */
+/* line 300, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img:after, .content .recommendations .mov_view .mov_img:before {
   content: ' ';
   display: block;
@@ -799,7 +824,7 @@ h2 {
   top: 0;
   left: 0;
 }
-/* line 288, ../sass/list.scss */
+/* line 307, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img:after {
   width: 100%;
   height: 100%;
@@ -811,7 +836,7 @@ h2 {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
 }
-/* line 296, ../sass/list.scss */
+/* line 315, ../sass/list.scss */
 .content .recommendations .mov_view .mov_img:before {
   top: 50%;
   left: 50%;
@@ -828,7 +853,7 @@ h2 {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 307, ../sass/list.scss */
+/* line 326, ../sass/list.scss */
 .content .recommendations .mov_view .movie_name {
   display: block;
   float: left;
@@ -837,11 +862,11 @@ h2 {
   margin: 0;
   padding: 0;
 }
-/* line 315, ../sass/list.scss */
+/* line 334, ../sass/list.scss */
 .content .recommendations .mov_view .stars {
   float: right;
 }
-/* line 318, ../sass/list.scss */
+/* line 337, ../sass/list.scss */
 .content .recommendations .mov_view .rating-xs {
   font-size: .8em;
 }

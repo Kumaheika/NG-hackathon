@@ -98,7 +98,7 @@
         <!-- 電影介紹 -->
         <div class="overview clearfix">
           <h2 class="title">Overview</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit.</a> Vero cum, vel quo exercitationem voluptates sapiente architecto molestiae aperiam possimus, tempora eos earum harum dolorum adipisci nulla in incidunt. Consequatur, modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita, consequuntur excepturi aperiam sunt blanditiis quisquam fugiat, quia aliquid reiciendis corporis ratione iusto incidunt ipsa error maxime accusamus? Itaque, hic!</p>
+          <p class="txt">Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit.</a> Vero cum, vel quo exercitationem voluptates sapiente architecto molestiae aperiam possimus, tempora eos earum harum dolorum adipisci nulla in incidunt. Consequatur, modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita, consequuntur excepturi aperiam sunt blanditiis quisquam fugiat, quia aliquid reiciendis corporis ratione iusto incidunt ipsa error maxime accusamus? Itaque, hic!</p>
           <a href="#" class="read">Read more…</a>
         </div>
       </div>
@@ -169,6 +169,15 @@
   <!-- swiper JS -->
   <script type="text/javascript" src="js/swiper.min.js"></script>
   <script>
+  $(function () {
+    var read = $('.read'),
+        txt = $('.txt');
+    read.click(function (e) {
+      e.preventDefault();
+      $(this).hide();
+      txt.addClass('active');
+    })
+  })
   $(".stars_input").rating(
     {
     'size':'xs',
