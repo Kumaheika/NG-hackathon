@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="Author" content="Newegg">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <meta http-equiv="Expires" Content="-1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>NeweggBox 黑松松</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/star-rating.min.css">
+  <link rel="stylesheet" href="css/list.css">
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/star-rating.min.js"></script>
+  <script type="text/javascript" src="js/buy.js"></script>
+</head>
+<body>
+  <div class="warp page">
+
+
+    <!-- 上方主選單 -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">NeweggTV</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active" >
+              <a class="opacity" href="#">NewArrivals</a>
+            </li>
+            <li>
+              <a class="opacity" href="#">Trending</a>
+            </li>
+            <li>
+              <a class="opacity" href="#">Movie</a>
+            </li>
+            <li>
+              <a class="opacity" href="#">Drama</a>
+            </li>
+            <li>
+              <a class="opacity" href="#">Education</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"><span class="user-icon"><img src="images/icon/announcement.svg" alt="username"></span></a>
+            </li>
+            <li>
+              <a href="#"><span class="user-icon"><img src="images/icon/user.svg" alt="username"></span></a>
+            </li>
+            <li><a href="#">user name</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- 電影 slider -->
+    <div class="screen">
+        <video src="mov/DoctorStrange.mp4" autoplay controls></video>
+    </div>
+    <!-- slider -->
+
+
+
+    <!-- 主內容 -->
+    <div class="content clearfix">
+
+      <!-- 左半邊 -->
+      <div class="left">
+        <div class="movieBuy">
+
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input" min=0 max=5 step=1 value="3">
+          </div>
+          <!-- 購買按鈕 -->
+          <button id="buy" type="button" class="btn buy">BUY</button>
+
+        </div>
+
+        <!-- 電影介紹 -->
+        <div class="overview clearfix">
+          <h2 class="title">Overview</h2>
+          <p class="txt">Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit.</a> Vero cum, vel quo exercitationem voluptates sapiente architecto molestiae aperiam possimus, tempora eos earum harum dolorum adipisci nulla in incidunt. Consequatur, modi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis expedita, consequuntur excepturi aperiam sunt blanditiis quisquam fugiat, quia aliquid reiciendis corporis ratione iusto incidunt ipsa error maxime accusamus? Itaque, hic!</p>
+          <a href="#" class="read">Read more…</a>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 右半邊 350 -->
+      <div class="recommendations">
+        <!-- 標題 -->
+        <h2 class="title">Recommendations</h2>
+
+        <!-- 其他推薦電影 -->
+        <!-- 影片 -->
+        <div class="mov_view">
+          <a href="#" class="mov_img">
+            <img src="images/mov_view/001.png">
+          </a>
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input_s" min=0 max=5 step=1 value="2">
+          </div>
+        </div>
+
+        <!-- 影片 -->
+        <div class="mov_view">
+          <a href="#" class="mov_img">
+            <img src="images/mov_view/002.png">
+          </a>
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input_s" min=0 max=5 step=1 value="4">
+          </div>
+        </div>
+
+        <!-- 影片 -->
+        <div class="mov_view">
+          <a href="#" class="mov_img">
+            <img src="images/mov_view/003.png">
+          </a>
+          <!-- 電影名稱 -->
+          <h3 class="movie_name">Movie Name.</h3>
+          <!-- 星星評價 -->
+          <div class="stars">
+            <input type="number" class="rating stars_input_s" min=0 max=5 step=1 value="5">
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </div><!-- content -->
+
+  </div><!-- warp -->
+
+  <!-- 星星控制 -->
+  <script>
+  $(".stars_input").rating(
+    {
+    'size':'xs',
+    'showClear':'',
+    'showCaption':'',
+    'displayOnly': true,
+    }
+  );  //带参数初始化
+  $(".stars_input_s").rating(
+    {
+    'size':'xs',
+    'showClear':'',
+    'showCaption':'',
+    'displayOnly': true,
+  });  //带参数初始化
+  </script>
+</body>
+</html>

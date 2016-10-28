@@ -15,8 +15,8 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="javascripts/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+  <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
 </head>
 <body>
   <div class="warp">
@@ -56,22 +56,54 @@
     </div>
 
 
-  </div><!-- warp -->
+
+    <!-- 底圖用 - Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <a class="swiper-slide slider_img slider01" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider02" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider03" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider04" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider05" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider06" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider07" href="#">
+          </a>
+          <a class="swiper-slide slider_img slider08" href="#">
+          </a>
+        </div>
+    </div>
+    <!-- slider -->
 
 
   <!-- swiper JS -->
-  <script type="text/javascript" src="javascripts/swiper.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
   <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        autoplay : 3000,
-        slidesPerView: 1,
-        paginationClickable: true,
-        spaceBetween: 30,
-        loop: true
-    });
+  var swiper = new Swiper('.swiper-container', {
+      effect : 'fade',
+      fade: {
+        crossFade: false,
+      },
+      autoplay : 6000,
+      speed: 3000,
+      slidesPerView: 1,
+      loop: true
+  });
+  var swiper = new Swiper('.swiper-container-glass', {
+      effect : 'fade',
+      fade: {
+        crossFade: false,
+      },
+      autoplay : 6000,
+      speed: 3000,
+      slidesPerView: 1,
+      loop: true
+  });
   </script>
 </body>
 </html>
