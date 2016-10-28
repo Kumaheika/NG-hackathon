@@ -98,6 +98,15 @@ h2 {
   50%  {opacity: .3;}
   100% {opacity: .6;}
 }
+//key frame
+@keyframes fadeIn_5 {
+  0%   {opacity: 0;}
+  100% {opacity: .5;}
+}
+@keyframes fadeIn_10 {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
 
 //基本 layout
 .warp {
